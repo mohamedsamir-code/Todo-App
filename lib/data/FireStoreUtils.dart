@@ -55,7 +55,11 @@ Future updateTodo(
         key: formkey,
         child: Column(
           children: [
-            Text(AppLocalizations.of(context)!.edit),
+            Text(
+              AppLocalizations.of(context)!.edit,
+              textAlign: TextAlign.center,
+              style: Theme.of(context).textTheme.titleSmall,
+            ),
             SizedBox(
               height: 20,
             ),
